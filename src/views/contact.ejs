@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title%></title>
+    <!--Agrega la porcion de codigo que esta en la ruta, para el CSS-->
+    <%- include('partial/head')%>
+</head>
+<body>
+    <!--Incluye la porcion de codigo que esta en la ruta -->
+    <%- include('partial/navigation')%>
+
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="card bg-dark text-white text-center">
+            <div class="card-header">
+                <h3>Contacto</h3>
+            </div>
+            <div class="card-body">
+                <form action="">
+                    <div class="mb-3 text-start">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message">mensaje</label>
+                        <textarea name="message" rows="3" class="form-control" placeholder="Mensaje"></textarea>
+                    </div>
+                    <input type="submit" name="" id="" value="Enviar" class="btn btn-primary btn-block">
+                </form>
+            </div>
+        </div>     
+    </div>
+    <%- include('partial/footer')%>
+</body>
+</html>

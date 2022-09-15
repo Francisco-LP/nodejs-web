@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <!--Agrega la porcion de codigo que esta en la ruta, para el CSS-->
+    <%- include('partial/head')%>
+</head>
+<body>
+    <!--Incluye la porcion de codigo que esta en la ruta -->
+    <%- include('partial/navigation')%>
+
+    <header class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src="/img/revvit.png" alt="" class="w-25">
+            <h1>Revvit</h1>
+            <a href="/about" class="btn btn-primary w-25">Acerca de</a>
+        </div>
+    </header>
+
+    <%- include('partial/footer')%>
+</body>
+</html>
